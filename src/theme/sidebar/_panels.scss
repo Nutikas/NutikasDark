@@ -1,0 +1,17 @@
+#app-mount {
+	.panels-3wFtMD {
+		background: transparent;
+		.lookFilled-1Gx00P.colorBrand-3pXr91 {
+			background: var(--foreground);
+			&:hover {
+				background: var(--foreground-double);
+			}
+			&:active {
+				background: var(--foreground-triple);
+			}
+		}
+	}
+	.container-1zzFcN {
+		border-bottom: none;
+	}
+}
