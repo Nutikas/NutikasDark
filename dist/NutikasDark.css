@@ -120,6 +120,9 @@
 	overflow: hidden;
 	border-radius: var(--window-roundness);
 }
+#app-mount .title-17SveM {
+	color: #7a3ef3;
+}
 #app-mount .icon-2xnN2Y {
 	color: #7a3ef3;
 }
@@ -582,7 +585,7 @@ textarea {
 	height: 40px;
 }
 
-#app-mount .overflow-1wOqNV {
+#app-mount .container-q97qHp {
 	color: #7a3ef3;
 }
 
