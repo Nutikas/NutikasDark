@@ -120,6 +120,9 @@
 	overflow: hidden;
 	border-radius: var(--window-roundness);
 }
+#app-mount .icon-2xnN2Y {
+	color: #7a3ef3;
+}
 #app-mount .base-2jDfDU::before {
 	content: '';
 	position: absolute;
@@ -210,7 +213,7 @@ input,
 select,
 textarea {
 	font-family: var(--font, 'gg sans'), 'gg sans';
-	font-size: 12px;
+	font-size: 14px;
 }
 
 #app-mount .tooltip-33Jwqe {
@@ -218,13 +221,15 @@ textarea {
 	text-align: center;
 	font-weight: 600;
 }
+#app-mount .modeSelected-3DmyhH .name-28HaxV {
+	color: #009dc4;
+}
 #app-mount .tooltipPrimary-2466a2 {
 	background: var(--gradient);
 }
 #app-mount .tooltipPrimary-2466a2 .tooltipPointer-sMBQqe {
 	display: none;
 }
-
 #app-mount .bg-1QIAus {
 	top: -22px;
 	right: 0;
@@ -329,7 +334,6 @@ textarea {
 	user-select: none;
 	z-index: -1;
 }
-
 #app-mount .lookFilled-1Gx00P.colorPrimary-3b3xI6,
 #app-mount .lookGhost-2Fn_0-.colorGrey-2DXtkV,
 #app-mount .lookInverted-2D7oAl.colorBrand-3pXr91,
@@ -487,7 +491,6 @@ textarea {
 	background: var(--background-secondary);
 	border-color: transparent;
 }
-
 #app-mount .title-31SJ6t {
 	background: transparent;
 }
@@ -497,7 +500,6 @@ textarea {
 #app-mount .title-31SJ6t .children-3xh0VB::after {
 	content: none;
 }
-
 #app-mount .notice-2HEN-u {
 	height: 48px;
 	display: flex;
@@ -575,6 +577,19 @@ textarea {
 #app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .homeIcon-r0w4ny {
 	display: none;
 }
+#app-mount .homeIcon-r0w4ny {
+	width: 40px;
+	height: 40px;
+}
+
+#app-mount .overflow-1wOqNV {
+	color: #7a3ef3;
+}
+
+#app-mount svg.icon-2W8DHg path {
+	fill: #009dc4;
+}
+
 #app-mount .guilds-2JjMmN .selected-1Drb7Z .acronym-2zrAHN {
 	background: var(--foreground-double);
 }
@@ -660,11 +675,9 @@ textarea {
 	background: var(--gradient-20);
 	border: 2px solid rgb(var(--gradient-primary));
 }
-
 #app-mount .channel-1Shao0 .selected-3veCBZ {
 	background: var(--gradient);
 }
-
 #app-mount .panels-3wFtMD {
 	background: transparent;
 }
@@ -680,11 +693,9 @@ textarea {
 #app-mount .container-1zzFcN {
 	border-bottom: none;
 }
-
 #app-mount .unread-1xRYoj {
 	background: var(--gradient);
 }
-
 #app-mount .content-1jQy2l::before {
 	content: none;
 }
