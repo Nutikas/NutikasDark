@@ -6,7 +6,7 @@
  * @source https://github.com/Nutikas/NutikasDark
 */
 
-@import url('https://nutikas.github.io/NutikasDark/dist/NutikasDark.theme.css');
+@import url('https://nutikas.github.io/NutikasDark/dist/NutikasDark.css');
 
 /* Old Windows titlebar - remove this @import if you wish to use default titlebar */
 @import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:wght@100;300;400;500;700&display=swap');
