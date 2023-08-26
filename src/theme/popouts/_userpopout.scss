@@ -9,7 +9,8 @@
 
 	&::before {
 		content: '';
-		background: linear-gradient(var(--tint), var(--tint)), var(--fb-popout-image);
+		background: linear-gradient(var(--tint), var(--tint)),
+			var(--fb-popout-image);
 		background-position: var(--fb-popout-position, center);
 		background-size: var(--fb-popout-size, cover);
 		background-attachment: var(--fb-popout-attachment, revert);
@@ -21,7 +22,10 @@
 		left: calc(var(--fb-popout-blur) / -1 * 2.5);
 		position: absolute;
 		filter: blur(var(--fb-popout-blur));
-		transform: translate(var(--fb-popout-blur) / -1, calc(var(--fb-popout-blur) / -1));
+		transform: translate(
+			var(--fb-popout-blur) / -1,
+			calc(var(--fb-popout-blur) / -1)
+		);
 		pointer-events: none;
 		user-select: none;
 		z-index: -1;

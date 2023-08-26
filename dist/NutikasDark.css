@@ -1,5 +1,5 @@
 :root {
-  --version: "Frosted Glass 2.0.18";
+  --version: "Nutikas Dark 1.0.0";
   --TB-top: calc(var(--server-container) + var(--window-padding));
   --TB-tr-roundness: var(--window-roundness);
   --TB-position-top: var(--TB-top, var(--window-padding));
@@ -9,10 +9,26 @@
   --foreground: rgb(255, 255, 255, 0.05);
   --foreground-double: rgb(255, 255, 255, 0.1);
   --foreground-triple: rgb(255, 255, 255, 0.15);
-  --gradient: linear-gradient(var(--gradient-direction), rgb(var(--gradient-primary)), rgb(var(--gradient-secondary)));
-  --gradient-20: linear-gradient(var(--gradient-direction), rgb(var(--gradient-primary), 0.2), rgb(var(--gradient-secondary), 0.2));
-  --gradient-50: linear-gradient(var(--gradient-direction), rgb(var(--gradient-primary), 0.5), rgb(var(--gradient-secondary), 0.5));
-  --gradient-90: linear-gradient(var(--gradient-direction), rgb(var(--gradient-primary), 0.9), rgb(var(--gradient-secondary), 0.9));
+  --gradient: linear-gradient(
+  	var(--gradient-direction),
+  	rgb(var(--gradient-primary)),
+  	rgb(var(--gradient-secondary))
+  );
+  --gradient-20: linear-gradient(
+  	var(--gradient-direction),
+  	rgb(var(--gradient-primary), 0.2),
+  	rgb(var(--gradient-secondary), 0.2)
+  );
+  --gradient-50: linear-gradient(
+  	var(--gradient-direction),
+  	rgb(var(--gradient-primary), 0.5),
+  	rgb(var(--gradient-secondary), 0.5)
+  );
+  --gradient-90: linear-gradient(
+  	var(--gradient-direction),
+  	rgb(var(--gradient-primary), 0.9),
+  	rgb(var(--gradient-secondary), 0.9)
+  );
   --text-shadow: 1;
   --chat-embed: var(--background-secondary);
   --discord-green: 67, 181, 129;
@@ -28,12 +44,18 @@
   --fb-popout-image: var(--popout-modal-image, var(--popout-image));
   --fb-popout-blur: var(--popout-modal-blur, var(--popout-image-blur));
   --fb-popout-size: var(--popout-modal-size, var(--popout-image-size));
-  --fb-popout-position: var(--popout-modal-position, var(--popout-image-position));
+  --fb-popout-position: var(
+  	--popout-modal-position,
+  	var(--popout-image-position)
+  );
   --fb-popout-repeat: var(--popout-modal-repeat, var(--popout-image-repeat));
   --fb-overlay-image: var(--popout-modal-image, var(--overlay-image));
   --fb-overlay-blur: var(--popout-modal-blur, var(--overlay-image-blur));
   --fb-overlay-size: var(--popout-modal-size, var(--overlay-image-size));
-  --fb-overlay-position: var(--popout-modal-position, var(--overlay-image-position));
+  --fb-overlay-position: var(
+  	--popout-modal-position,
+  	var(--overlay-image-position)
+  );
   --fb-overlay-repeat: var(--popout-modal-repeat, var(--overlay-image-repeat));
 }
 
@@ -65,7 +87,8 @@
   --background-mentioned-hover: rgb(250, 166, 26, 0.08);
   --background-message-hover: rgb(4, 4, 5, 0.07);
   --elevation-stroke: 0 0 0 1px rgb(4, 4, 5, 0.15);
-  --elevation-low: 0 1px 0 rgb(4, 4, 5, 0.2), 0 1.5px 0 rgb(6, 6, 7, 0.05), 0 2px 0 rgb(4, 4, 5, 0.05);
+  --elevation-low: 0 1px 0 rgb(4, 4, 5, 0.2), 0 1.5px 0 rgb(6, 6, 7, 0.05),
+  	0 2px 0 rgb(4, 4, 5, 0.05);
   --elevation-medium: 0 4px 4px rgb(0, 0, 0, 0.16);
   --elevation-high: 0 8px 16px rgb(0, 0, 0, 0.24);
   --logo-primary: #fff;
@@ -76,7 +99,9 @@
   --deprecated-card-bg: rgb(0, 0, 0, 0.3);
   --deprecated-card-editable-bg: rgb(0, 0, 0, 0.3);
   --deprecated-store-bg: #36393f;
-  --deprecated-quickswitcher-input-background: var(--channeltextarea-background);
+  --deprecated-quickswitcher-input-background: var(
+  	--channeltextarea-background
+  );
   --deprecated-quickswitcher-input-placeholder: rgb(255, 255, 255, 0.5);
   --deprecated-text-input-bg: rgb(0, 0, 0, 0.1);
   --deprecated-text-input-border: rgb(0, 0, 0, 0.3);
@@ -134,7 +159,7 @@
 }
 
 #app-mount .app-2CXKsg::before {
-  content: "Your version of Frosted Glass is outdated. Please redownload";
+  content: "Your version of Nutikas Dark is outdated. Please redownload";
   white-space: pre-wrap;
   display: var(--update-notice-1, block);
   color: #fff;
@@ -182,6 +207,7 @@ input,
 select,
 textarea {
   font-family: var(--font, "gg sans"), "gg sans";
+  font-size: 16px;
 }
 
 #app-mount .tooltip-33Jwqe {
@@ -533,9 +559,10 @@ textarea {
 }
 #app-mount .guilds-2JjMmN .acronym-2zrAHN {
   background: var(--foreground);
+  color: #1ca730;
 }
 #app-mount .guilds-2JjMmN .acronym-2zrAHN:hover {
-  background: var(--foreground-double);
+  background: var(--foreground-triple);
 }
 #app-mount .guilds-2JjMmN [class*=circleIconButton] {
   background: var(--foreground);
@@ -704,6 +731,9 @@ textarea {
 #app-mount .form-3gdLxP .slateTextArea-27tjG0 {
   padding-left: 5px;
 }
+#app-mount .form-3gdLxP .placeholder-1rCBhr.slateTextArea-27tjG0.fontSize16Padding-XoMpjI {
+  color: gray;
+}
 
 #app-mount .divider-2rZFJK {
   border: none;
@@ -774,6 +804,9 @@ textarea {
 #app-mount .pill-3pRQlO:hover {
   background: var(--foreground-double);
 }
+#app-mount .item-2LIpTv {
+  background-color: #7a3ef3;
+}
 
 #app-mount .container-2o3qEW {
   background-color: rgb(0, 0, 0, var(--right-brightness));
@@ -808,6 +841,12 @@ textarea {
 #app-mount .member-2gU6Ar.selected-1-Z6gm .username-3_PJ5r,
 #app-mount .member-2gU6Ar.selected-1-Z6gm .activity-2EQDZv {
   color: #fff !important;
+}
+#app-mount .member-2gU6Ar.selected-1-Z6gm .activity-2EQDZv strong {
+  color: #6e29f6;
+}
+#app-mount .member-2gU6Ar.selected-1-Z6gm .title-17SveM {
+  color: #6e29f6;
 }
 
 .colorDefault-2K3EoJ.focused-3afm-j,
@@ -1425,6 +1464,12 @@ textarea {
 }
 #app-mount .container-2cd8Mz .nowPlayingColumn-1eCBCN {
   background: rgb(0, 0, 0, var(--right-brightness));
+}
+#app-mount .container-2cd8Mz .defaultColor-1GKx81 {
+  color: #1ca730;
+}
+#app-mount .container-2cd8Mz header.headerFull-34WFWN.header-3jUeHi .defaultColor-1EVLSt {
+  color: #7a3ef3;
 }
 
 #app-mount .perksModal-fSYqOq {

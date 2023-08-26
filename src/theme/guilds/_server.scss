@@ -10,7 +10,10 @@
 				content: '';
 				border-radius: 50%;
 				position: absolute;
-				background: var(--home-button-image, url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg'));
+				background: var(
+					--home-button-image,
+					url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg')
+				);
 				background-size: var(--home-button-size, cover);
 				background-position: var(--home-button-position, center);
 				background-repeat: var(--home-button-repeat, no-repeat);
@@ -33,8 +36,9 @@
 	.acronym-2zrAHN {
 		background: var(--foreground);
 		&:hover {
-			background: var(--foreground-double);
+			background: var(--foreground-triple);
 		}
+		color: #1ca730;
 	}
 	// Add server/Discovery
 	[class*='circleIconButton'] {
